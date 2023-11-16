@@ -1,0 +1,72 @@
+.body-html {
+    background-color: var(--second-color);
+}
+.home-landing section div {
+     z-index: -1;
+}
+
+.navigasi-atas header {
+    position: fixed;
+}
+.home-detail {
+    font-size: 35px;
+} 
+.home-detail2 {
+    font-size: 25px;
+}
+
+.home-landing-detail {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding : 2rem;
+}
+
+.button-home-contact {
+    text-decoration: none;
+}
+
+.section-about-menu {
+   
+    color: white;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+.about-menu-detail {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding : 2rem;
+}
+
+.section-skilss-menu {
+    color: white;
+}
+
+.section-work-menu {
+    margin-top : 6rem;
+}
+.footer-style {
+    padding-top : -2rem;
+    height: 4rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-color : white;
+    background-color:blue;
+    position :fixed;
+    width: 100%;
+    bottom: 0px;
+}
+.footer-style .footer-title {
+    padding-top: 2rem;
+}
+.home-landing-section {
+    color : white;
+}
+
+.footer-style-detail {
+    display: flex;
+    flex-direction: row;
+    margin-top : 2rem;
+    column-gap: 2rem;
+}
