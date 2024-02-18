@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MasterLandingController;
 use App\Http\Controllers\MasterMenuController;
 use App\Http\Controllers\MasterWorkController;
+use App\Http\Controllers\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,26 +17,11 @@ use App\Http\Controllers\MasterWorkController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', [ServiceController::class, 'index'])
+->name('view-index');
+
+Route::post('/simpan/testimoni', [ServiceController::class, 'store' ])
+->name('simpan-data');
 
 
 
-Route::get('/about',[MasterMenuController::class, 'index'])
-->name('menu-about');
-
-Route::get('/home',[MasterMenuController::class, 'home'])
-->name('menu-home');
-
-Route::get('/skilss',[MasterMenuController::class, 'skills'])
-->name('menu-skills');
-
-Route::get('/work',[MasterMenuController::class, 'work'])
-->name('menu-work');
-
-Route::get('/contact',[MasterMenuController::class, 'contact'])
-->name('menu-contact');
-
-Route::get('/master/work/wedding/invitation',[MasterWorkController::class, 'index'])
-->name('wedding-invitation');
